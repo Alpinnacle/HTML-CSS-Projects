@@ -1,0 +1,11 @@
+p {
+	background-image: url("americanflag.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: WhiteSmoke;
+	text-align: center;
+	line-height: 100px;
+	letter-spacing: 2px;
+	text-shadow: 3px 3px 5px #000000;
+	font-size: 25px;
+}
