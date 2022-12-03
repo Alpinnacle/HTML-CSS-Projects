@@ -2,7 +2,27 @@
 <html lang="en">
 	<head>
 		<title>The Borderlands | Go Today!</title>
-		<meta charset="utf-8">
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial scale=1">
+		
+		<style>
+			#danceVideo {
+				display: block;
+				width: 100%;
+				height: 566px;
+				z-index: -100;
+				object-fit: cover;
+			}	
+			
+			.content {
+				position: fixed;
+				bottom: 0;
+				background: rgba(0, 0, 0, 0.5);
+				color: #f1f1f1;
+				width: 100%;
+				padding: 20px;
+			}
+				
+		</style>
 	</head>
 	<body>
 	
@@ -19,11 +39,9 @@
 		<!-- END NAV -->
 		
 		<!-- VIDEO -->
-		<div>
 			<video autoplay muted loop id="danceVideo">
 				<source src="./images/video/dance.mp4" type="video/mp4">
 			</video>
-		</div>
 		<!-- END VIDEO -->
 		
 		<!-- HOME -->
