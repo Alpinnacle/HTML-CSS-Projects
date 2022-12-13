@@ -1,0 +1,47 @@
+/*--------------------
+GENERIC STYLING
+--------------------*/
+body {
+    font-family: impact;
+}
+
+.video-pad {
+    padding-bottom: 475px;
+}
+
+#danceVideo {
+	display: block;
+	width: 100%;
+	height: 566px;
+	z-index: -100;
+	object-fit: cover;
+    top: 0;
+    left: 0;
+    position: absolute;
+}	
+			
+.content {
+	position: fixed;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	color: #f1f1f1;
+	width: 100%;
+	padding: 20px;
+}
+
+/*--------------------
+GALLERY SPECIFIC
+--------------------*/
+.gallery img {
+    width:100%;
+}
+
+.demo-cursor {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.gallery-container {}
