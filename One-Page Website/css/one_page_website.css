@@ -2,46 +2,166 @@
 GENERIC STYLING
 --------------------*/
 body {
-    font-family: impact;
+	background-color: antiquewhite;
+	font-family: sans-serif;
+}
+/*--------------------
+HOME SPECFIC
+--------------------*/
+#home {
+	padding-top: 50px;
+	font-size: larger;
 }
 
-.video-pad {
-    padding-bottom: 475px;
-}
-
-#danceVideo {
-	display: block;
+/*--------------------
+MENU SPECIFIC
+--------------------*/
+.topnav-container {
 	width: 100%;
-	height: 566px;
-	z-index: -100;
-	object-fit: cover;
-    top: 0;
-    left: 0;
-    position: absolute;
-}	
-			
-.content {
+	top: 0;
+	left: 0;
 	position: fixed;
-	bottom: 0;
-	background: rgba(0, 0, 0, 0.5);
-	color: #f1f1f1;
-	width: 100%;
-	padding: 20px;
+	z-index: 100;
+}
+
+/*add a black background color to the topnav*/
+.topnav {
+	background-color: #333;
+	overflow: hidden;
+}
+
+/*style the links inside the topnav*/
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+/*Change link color on hover*/
+.topnav a:hover {
+	background-color: #ddd;
+	color: #333;
+}
+
+/*Add color to home link*/
+.topnav a.homepage {
+	background-color: #0491aa;
+	color: #fff;
 }
 
 /*--------------------
 GALLERY SPECIFIC
 --------------------*/
-.gallery img {
-    width:100%;
+#gallery {
+	padding-top: 55px;
 }
 
-.demo-cursor {
-    width: 100%;
+.examples {
+	text-align: center;
+	border: double;
+	width: 300px;
+	margin: 4px auto;
 }
 
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+/*Create 4 equal columns that sit next to each other*/
+.column {
+	flex: 22%;
+	max-width: 22%;
+	padding: 0 4px;
+}
+
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+	.column {
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.column {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+/*--------------------
+REGISTRATION SPECIFIC
+--------------------*/
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-.gallery-container {}
+.reg-img {
+	/*The image used*/
+	background-image: url(../images/gallery/pexels-photo-14552618\ \(1\).jpg);
+	width: 100%;
+	height: 100%;
+	left: 0;
+	/*Center and scale image nicely*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+}
+
+/*add styles to container*/
+.reg-container {
+	position: absolute;
+	right: 0;
+	margin: 20px;
+	max-width: 300px;
+	padding: 16px;
+	background-color: #fff;
+	z-index: 1;
+}
+
+/*Full-width input fields*/
+input[type=text] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	border-radius: 5px;
+	background: #f1f1f1;
+}
+
+input[type=text]:hover {
+	background-color: #ddd;
+	outline: none;
+}
+
+/*style for button*/
+.reg-btn {
+	background-color: #0491aa;
+	color: #fff;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+}
+
+.reg-btn:hover {
+	opacity: 1;
+}
+.spacer {
+	padding-top: 50px;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
